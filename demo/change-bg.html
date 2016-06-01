@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AccordionNav-Demo</title>
+    <link href="../font-awesome-4.6.2/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div>
+    <!--change the background and font color of the accordion nav-->
+    <div id="test"></div>
+</div>
+
+<!--import the script files-->
+<script src="../src/jquery-2.2.4.min.js" rel="script"></script>
+<script src="../src/jquery.accordionnav.min.js" rel="script"></script>
+<script>
+    $(document).ready(function(){
+        $('#test').accordion({
+
+
+            /*set the whole background, all options used in css background can be the bg's value*/
+            'bg':'linear-gradient(10deg,#1f7bcc,#218cd9,#2195d9)',
+            /*set the color of title icon*/
+            'titleIconColor':'#fff',
+            /*set the color of title font*/
+            'titleFontColor':'#fff',
+            /*set the title delimit line, all options used in css border can be the titleDelimitLine's value*/
+            'titleDelimitLine':'1px solid #fff',
+            /*set the color of menu font*/
+            'menuFontColor':'#fff',
+            /*set the menu delimit line*/
+            'menuDelimitLine':'1px solid #fff',
+            /*set the submenu's background while hover your mouse on the submenu*/
+            'hoverBg':'#187bcc',
+            /*set the submenu's border-left style while hover your mouse on the submenu*/
+            'hoverBorderLeft':'none',
+            /*set the submenu's background while you choose one*/
+            'chosenBg':'#0776cb',
+            /*set the submenu's border-left style while you choose one*/
+            'chosenBorderLeft':'4px solid #fe9333',
+            /*set the color of icon when submenu is fold*/
+            'foldIconColor':'#fff',
+            /*set the color of icon when submenu is unfold*/
+            'unfoldIconColor':'#fff'
+
+            /*here are a lot more options you can set, please visit https://github.com/cj1406942109/AccordionNav to learn more*/
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AccordionNav-Demo</title>
+    <link href="../font-awesome-4.6.2/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div>
+    <!--change the content of the accordion nav's title, menu and submenu-->
+    <div id="test"></div>
+</div>
+
+<!--import the script files-->
+<script src="../src/jquery-2.2.4.min.js" rel="script"></script>
+<script src="../src/jquery.accordionnav.min.js" rel="script"></script>
+<script>
+    $(document).ready(function(){
+        $('#test').accordion({
+            /*set the title of the accordion nav*/
+            'title':'手风琴菜单',
+            /*set the title of the accordion menus*/
+            /*
+            * the value of the menus is a two-dimensional array, each value of the array is a nav menu,
+            * and the first value is the name of menu, the second value is the href of menu, it can be any value of the
+            * element <a></a>'s attribute "href", if it's set '', it means it has no href attribute.
+            * */
+            'menus':[
+                ['主菜单1',''],
+                ['主菜单2',''],
+                ['主菜单3',''],
+                ['主菜单4',''],
+                ['主菜单5','']
+            ],
+            /*the rule of submenus is the same as menus*/
+            'submenus':[
+                [
+                    ['主菜单1子菜单1',''],
+                    ['主菜单1子菜单2',''],
+                    ['主菜单1子菜单3',''],
+                    ['主菜单1子菜单4','']
+                ],
+                [
+                    ['主菜单2子菜单1',''],
+                    ['主菜单2子菜单2',''],
+                    ['主菜单2子菜单3',''],
+                    ['主菜单2子菜单4',''],
+                    ['主菜单2子菜单5',''],
+                    ['主菜单2子菜单6','']
+                ],
+                [
+                    ['主菜单3子菜单1',''],
+                    ['主菜单3子菜单2',''],
+                    ['主菜单3子菜单3','']
+                ],
+                [
+                    ['主菜单4子菜单1',''],
+                    ['主菜单4子菜单2',''],
+                    ['主菜单4子菜单3',''],
+                    ['主菜单4子菜单4',''],
+                    ['主菜单4子菜单5','']
+                ],
+                [
+                    ['主菜单5子菜单1',''],
+                    ['主菜单5子菜单2',''],
+                    ['主菜单5子菜单3',''],
+                    ['主菜单5子菜单4','']
+                ]
+            ]
+        });
+    });
+</script>
+</body>
+</html>

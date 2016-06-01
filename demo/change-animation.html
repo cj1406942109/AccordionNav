@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AccordionNav-Demo</title>
+    <link href="../font-awesome-4.6.2/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div>
+    <!--change the slidedown and slideup animation of the submenu-->
+    <div id="test"></div>
+</div>
+
+<!--import the script files-->
+<script src="../src/jquery-2.2.4.min.js" rel="script"></script>
+<script src="../src/jquery.accordionnav.min.js" rel="script"></script>
+<script>
+    $(document).ready(function(){
+        $('#test').accordion({
+            /*show only one submenu at a time or not ,*/
+            /*if true ,there will only one submenu to be shown every time*/
+            'showOneSubmenu':false,
+
+            /*you can choose whether to show the first submenu when opening the page first time,*/
+            'showFirstSubmenu':true,
+            /*if showFirstSubmenu is true, you can set delay time, value 1000 means 1 second*/
+            'delayTime':1000,
+
+            /*you can set the time of slidedown or slideup, value 1000 means 1 second*/
+            'animationTime':'fast'
+        });
+    });
+</script>
+</body>
+</html>

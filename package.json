@@ -1,0 +1,19 @@
+{
+  "name": "accordionnav",
+  "description": "auto generate an accordion menu",
+  "author": "dushang",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cj1406942109/AccordionNav"
+  },
+  "keywords": [
+    "accordion",
+    "menu",
+    "nav",
+    "plugin",
+    "animation"
+  ],
+  "main": "src/accordionnav.jquery.min.js"
+}

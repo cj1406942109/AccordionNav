@@ -1,0 +1,18 @@
+{
+  "name": "accordion",
+  "version": "1.0.0",
+  "homepage": "https://github.com/cj1406942109/accordion/",
+  "authors": [
+    "dushang <1406942109@qq.com>"
+  ],
+  "description": "auto generate an accordion menu",
+  "main": "src/jquery.accordionnav.min.js",
+  "keywords": [
+    "accordion",
+    "menu",
+    "nav",
+    "plugin",
+    "animation"
+  ],
+  "license": "MIT"
+}
